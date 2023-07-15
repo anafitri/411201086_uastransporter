@@ -44,11 +44,11 @@ class KurirController extends Controller
     {
         try {
             $messages = [
-                'name.required' => 'Mohon isi nama kurir terlebih dahulu',
+                'name.required' => 'Nama kurir wajib diisi',
                 'email.email' => 'Pastikan value yang diinput berformat email',
                 'email.required' => 'Mohon isi email terlebih dahulu',
                 'email.unique' => 'Email sudah terdaftar',
-                'password.required' => 'Mohon isi password terlebih dahulu'
+                'password.required' => 'Password wajiib diisi'
             ];
             $validator = Validator::make($request->all(), [
                 'name'=> 'required',
@@ -118,8 +118,8 @@ class KurirController extends Controller
     {
         try {
             $messages = [
-                'name.required' => 'Mohon isi nama kurir terlebih dahulu',
-                'password.required' => 'Mohon isi password terlebih dahulu'
+                'name.required' => 'Nama kurir wajib diisi',
+                'password.required' => 'Password wajib diisi'
             ];
             $validator = Validator::make($request->all(), [
                 'name'=> 'required',
