@@ -118,8 +118,8 @@ class KurirController extends Controller
     {
         try {
             $messages = [
-                'name.required' => 'Mohon isi nama kurir terlebih dahulu',
-                'password.required' => 'Mohon isi password terlebih dahulu'
+                'name.required' => 'Nama kurir wajib diisi',
+                'password.required' => 'Password wajib diisi'
             ];
             $validator = Validator::make($request->all(), [
                 'name'=> 'required',
