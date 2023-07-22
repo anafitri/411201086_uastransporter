@@ -43,7 +43,7 @@ class LokasiController extends Controller
     {
         try {
             $messages = [
-                'nama_lokasi.required' => 'Nama Lokasi wajib diisi'
+                'nama_lokasi.required' => 'Mohon isi nama lokasi terlebih dahulu'
             ];
 
             if (!$request->filled('kode_lokasi')) {
@@ -110,7 +110,7 @@ class LokasiController extends Controller
     {
         try {
             $messages = [
-                'nama_lokasi.required' => 'Nama lokasi wajib diisi'
+                'nama_lokasi.required' => 'Mohon isi nama lokasi terlebih dahulu'
             ];
 
             if (!$request->filled('kode_lokasi')) {

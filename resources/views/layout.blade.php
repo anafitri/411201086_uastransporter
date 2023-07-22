@@ -81,7 +81,11 @@ asset('plugins/daterangepicker/daterangepicker.css') }}">
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="info">
                     <a href="#" class="d-block">
-                        Admin
+                        @if(auth()->user()->level == 1)
+                            Admin
+                        @else
+                            Kurir
+                        @endif
                     </a>
                 </div>
             </div>
@@ -94,6 +98,7 @@ asset('plugins/daterangepicker/daterangepicker.css') }}">
                     <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                     <li class="nav-item menu-open">
+                        @if(auth()->user()->level == 1)
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ url('barang') }}" class="nav-link">
@@ -118,6 +123,7 @@ asset('plugins/daterangepicker/daterangepicker.css') }}">
                                     </a>
                                 </li>
                             </ul>
+                        @endif
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ url('pengiriman') }}" class="nav-link">

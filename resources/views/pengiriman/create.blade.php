@@ -32,9 +32,10 @@
                                 @error('kurir_name')
                                 <div class="error">{{ $message }}</div>
                                 @enderror
-                                {{ Form::select('kurir_id',$kurir, $defaultKurirID,['class' => 'form-control','placeholder'=> '-- Pilih --', 'id' => 'kurir_select', 'disabled' => $defaultKurirID ? 'disabled' : null]) }}
+                                {{ Form::select('kurir_id',$kurir, $defaultKurirID,['class' => 'form-control','placeholder'=> '-- Pilih --', 'id' => 'kurir_select', 'disabled' => $defaultKurirID ? 'disabled' : null, 'value'=>isset($defaultKurirID) ? $kurir[$defaultKurirID] : '' ]) }}
                                 <input type="hidden" name="kurir_name" id="kurir_name" value="{{ isset($defaultKurirID) ? $kurir[$defaultKurirID] : '' }}">
-
+                                <input type="hidden" name="kurir_id" value="{{ isset($defaultKurirID) ? $defaultKurirID : '' }}">
+                                
                                 <label for="name" class="required">Barang</label>
                                 @error('barang_id')
                                 <div class="error">{{ $message }}</div>

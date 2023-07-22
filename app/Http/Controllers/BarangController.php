@@ -43,10 +43,10 @@ class BarangController extends Controller
     {
         try {
             $messages = [
-                'nama_barang.required' => 'Nama barang wajib diisi',
-                'stok_barang.required' => 'Stok barang wajib diisi',
+                'nama_barang.required' => 'Mohon isi nama barang terlebih dahulu',
+                'stok_barang.required' => 'Mohon isi stok barang terlebih dahulu',
                 'stok_barang.numeric' => 'Mohon isi stok barang dengan angka',
-                'harga_barang.required' => 'Harga barang wajib diisi',
+                'harga_barang.required' => 'Mohon isi harga barang terlebih dahulu',
                 'harga_barang.numeric' => 'Mohon isi harga barang dengan angka'
             ];
 
@@ -119,10 +119,10 @@ class BarangController extends Controller
     {
         try {
             $messages = [
-                'nama_barang.required' => 'Nama barang wajib diisi',
-                'stok_barang.required' => 'Stok barang wajib diisi',
+                'nama_barang.required' => 'Mohon isi nama barang terlebih dahulu',
+                'stok_barang.required' => 'Mohon isi stok barang terlebih dahulu',
                 'stok_barang.numeric' => 'Mohon isi stok barang dengan angka',
-                'harga_barang.required' => 'Harga barang wajib diisi',
+                'harga_barang.required' => 'Mohon isi harga barang terlebih dahulu',
                 'harga_barang.numeric' => 'Mohon isi harga barang dengan angka'
             ];
 

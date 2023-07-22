@@ -6,7 +6,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-tools">
-                            <a href="{{ url('/pengiriman') }}" class="btn btn-success btn-sm pull-right"><i
+                            <a href="{{ url('pengiriman') }}" class="btn btn-success btn-sm pull-right"><i
                                     class="fa fa-pencil"></i> Kembali</a>
                         </div>
                     </div>
